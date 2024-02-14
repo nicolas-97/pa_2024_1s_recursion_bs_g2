@@ -12,6 +12,7 @@ class TestRecursion(unittest.TestCase):
         self.assertEqual(fibonacci(0), 0)
         self.assertEqual(fibonacci(1), 1)
         self.assertEqual(fibonacci(5), 5)
+        self.assertEqual(fibonacci(6), 8)
 
     def test_sum_of_numbers(self):
         self.assertEqual(sum_of_numbers(0), 0)
