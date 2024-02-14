@@ -2,7 +2,10 @@
     Implementa una función recursiva para calcular el factorial de un número entero positivo
 '''
 def factorial(n):
-    return n
+    if n==0 or n==1:
+        return 1
+    elif n>1:
+        return n * factorial(n-1)
 
 '''
     Implementa una función recursiva para calcular el término n-ésimo de la secuencia de Fibonacci.
