@@ -1,6 +1,6 @@
 # Ejercicios algoritmos de ordenamiento | Programación Avanzada - Grupo 1
 
-Este proyecto contiene implementaciones de algoritmos de ordenamiento para el curso de Programación Avanzada.
+Este proyecto contiene implementaciones de algoritmos de recursion y busqueda binaria para el curso de Programación Avanzada.
 
 ## Instrucciones para Clonar el Repositorio
 
@@ -9,18 +9,18 @@ Este proyecto contiene implementaciones de algoritmos de ordenamiento para el cu
 2. Clona el repositorio ejecutando el siguiente comando:
 
     ```bash
-    git clone https://github.com/nicolas-97/pa_2024_1s_sort_g1.git
+    git clone https://github.com/nicolas-97/pa_2024_1s_recursion_bs_g1.git
     ```
 
 3. Cambia al directorio del proyecto:
 
     ```bash
-    cd pa_2024_1s_sort_g1
+    cd pa_2024_1s_recursion_bs_g1
     ```
 
 ## Instrucciones para Codificar en el Módulo utils
 
-Las implementaciones de los algoritmos de ordenamiento se encuentran en el módulo `utils/sort.py`. Puedes modificar o agregar código en este archivo según sea necesario.
+Las implementaciones de los algoritmos  se encuentran en el módulo `algorithms/*.py`. Puedes modificar o agregar código en estos archivos según sea necesario.
 
 ## Instrucciones para Ejecutar las Pruebas Localmente
 
@@ -28,25 +28,19 @@ Asegúrate de tener Python instalado en tu sistema.
 
 1. Abre una terminal en el directorio del proyecto.
 
-2. Ejecuta las pruebas de Shell Sort:
+2. Ejecuta las pruebas de Binary search:
 
     ```bash
-    python -m unittest discover -s test -p "test_shell_sort.py"
+    python -m unittest discover -s test -p "test_binary_search.py"
     ```
 
-3. Ejecuta las pruebas de Quick Sort:
+3. Ejecuta las pruebas de recursividad:
 
     ```bash
-    python -m unittest discover -s test -p "test_quick_sort.py"
+    python -m unittest discover -s test -p "test_recursion.py"
     ```
 
-4. Ejecuta las pruebas de Merge Sort:
-
-    ```bash
-    python -m unittest discover -s test -p "test_merge_sort.py"
-    ```
-
-Estos comandos ejecutarán las pruebas unitarias para los algoritmos de ordenamiento. Asegúrate de que todas las pruebas pasen antes de enviar cambios al repositorio.
+Estos comandos ejecutarán las pruebas unitarias para los algoritmos. Asegúrate de que todas las pruebas pasen antes de enviar cambios al repositorio.
 
 ## Crear una Rama y Subir Cambios
 
