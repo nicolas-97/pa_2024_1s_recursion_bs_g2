@@ -2,10 +2,8 @@
     Implementa una función recursiva para calcular el factorial de un número entero positivo
 '''
 def factorial(n):
-    # Caso base: factorial de 0 es 1
     if n == 0:
         return 1
-    # Caso recursivo: n * factorial(n - 1)
     return n * factorial(n - 1)
 
 '''
@@ -46,7 +44,7 @@ def max_in_list(lst):
     elif len(lst) == 1:
         return lst[0]
     else:
-        mid = len(lst) // 2
-        left_max = max_in_list(lst[:mid])
-        right_max = max_in_list(lst[mid:])
-        return max(left_max, right_max)
+        mitad = len(lst) // 2
+        max_izq = max_in_list(lst[:mitad])
+        max_der = max_in_list(lst[mitad:])
+        return max(max_izq, max_der)
