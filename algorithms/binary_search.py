@@ -50,8 +50,8 @@ def binary_search_tree(inicio: TreeNode, meta: int) -> bool:
         if actual.val == meta:
             return True
         elif actual.val < meta:
-            actual = actual.der
+            actual = actual.right
         else:
-            actual = actual.izq
+            actual = actual.left
     
     return False
