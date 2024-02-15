@@ -37,5 +37,3 @@ def max_in_list(lst):
     else:
         max_number = max_in_list(lst[1:])
         return max_number if max_number > lst[0] else lst[0]
-
-    return lst
