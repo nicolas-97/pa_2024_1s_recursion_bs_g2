@@ -1,5 +1,7 @@
+
 import unittest
-from algorithms.recursion import factorial, fibonacci, sum_of_numbers, power, max_in_list
+
+from algorithms.recursion import factorial, fibonacci, max_in_list, power, sum_of_numbers
 
 class TestRecursion(unittest.TestCase):
 
