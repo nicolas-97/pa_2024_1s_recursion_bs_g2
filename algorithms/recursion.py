@@ -51,4 +51,4 @@ def max_in_list(lst):
         if head > max_tail:
             return head
         else:
-         return lst
+         return max_tail
