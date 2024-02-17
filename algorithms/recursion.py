@@ -29,8 +29,10 @@ def sum_of_numbers(n):
 def power(a, n):
     if n == 0:
         return 1
+    elif n ==1:
+        return a
     else:
-        return a ** n
+        return (a,n-1)*a
 
 '''
     Implementa una función recursiva para encontrar el máximo elemento en una lista de enteros.
