@@ -8,25 +8,17 @@ def binary_search(arr: list, target: int,left = 0 ,rigth = 0):
     if left+rigth == 0:
         rigth = len(arr)
 
-    middle = (left + rigth)//2
-
-    if len(arr) == 1:
+    if rigth<=left:
+        middle = (left + rigth)//2
         if arr[middle]==target:
             return middle
-        else:
-            return -1
-    elif len(arr)>1:
-        if arr[middle] == target:
-            return middle
         elif arr[middle] > target:
-            rigth = middle-1
-            return binary_search(arr,target, left, rigth)
+            return binary_search(arr,target, left, middle-1)
         elif arr[middle] < target:
-            left = middle+1
-            return binary_search(arr,target, left, rigth)
+            return binary_search(arr,target, middle+1, rigth)
         else:
             return -1
-    elif len(arr) == 0:
+    else:
         return -1
     
 '''
