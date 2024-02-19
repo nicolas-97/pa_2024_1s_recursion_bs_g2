@@ -23,10 +23,12 @@ def binary_recursive(arr, minimo, maximo, target):
     else:
         return -1
 
+
 '''
     Implementa una función de búsqueda binaria para encontrar un elemento en una matriz ordenada (fila y columna) de enteros y retorne verdadero si la encuntra el elmento o falso si no lo encuentra
 '''
 def binary_search_matrix(matrix: list[list[int]], target: int):
+
     if not matrix:
         return False
 
@@ -53,6 +55,7 @@ def binary_search_matrix(matrix: list[list[int]], target: int):
     Implementa una función de búsqueda binaria en un árbol binario de búsqueda  y retorne verdadero si la encuntra el elmento o falso si no lo encuentra
 '''
 def binary_search_tree(root: TreeNode, target: int):
+
     if not root:
         return False
     
@@ -66,3 +69,4 @@ def binary_search_tree(root: TreeNode, target: int):
             actual = actual.left
     
     return False
+
