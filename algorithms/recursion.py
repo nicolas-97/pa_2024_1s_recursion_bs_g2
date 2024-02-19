@@ -9,13 +9,14 @@ def factorial(n):
         result = 1
         for i in range(2, n + 1):
             result *= i
-            n=result
+            n=result    
         return n
 
 '''
     Implementa una función recursiva para calcular el término n-ésimo de la secuencia de Fibonacci.
 '''
 def fibonacci(n):
+    
     return n
 
 '''
