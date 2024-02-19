@@ -9,7 +9,7 @@ def binary_search(arr: list, target: int):
 
     return binary_recursive(arr, minimo, maximo, target)
     
-def binary_recursive(arr: list, minimo, maximo, target: int):
+def binary_recursive(arr, minimo, maximo, target):
     if len(arr) == 0:
         return -1
     elif maximo >= minimo:
@@ -17,9 +17,9 @@ def binary_recursive(arr: list, minimo, maximo, target: int):
         if arr[medio] == target:
             return medio
         elif arr[medio] > target:
-            return binary_search(arr, minimo, medio -1, target)
+            return binary_recursive(arr, minimo, medio -1, target)
         else:
-            return binary_search(arr, medio +1, maximo, target)
+            return binary_recursive(arr, medio +1, maximo, target)
     else:
         return -1
 
