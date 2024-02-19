@@ -51,5 +51,17 @@ def power(a, n):
     Implementa una función recursiva para encontrar el máximo elemento en una lista de enteros.
 '''
 def max_in_list(lst):
+    if lst == []:
+        return None
+    else:
+        return max_in_list_dos(lst, lst[0])
     
-    return lst
+
+def max_in_list_dos(lst, max):
+    if lst == []:
+        return max
+    
+    if lst[0] > max:
+        max = lst[0]
+    
+    return max_in_list_dos(lst[1:], max)
