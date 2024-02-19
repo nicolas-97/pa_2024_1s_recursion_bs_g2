@@ -6,6 +6,10 @@ from models.tree_node import TreeNode
 def binary_search(arr: list, target: int):
     minimo=0
     maximo= len(arr) -1
+
+    return binary_recursive(arr, minimo, maximo, target)
+    
+def binary_recursive(arr: list, minimo, maximo, target: int):
     if len(arr) == 0:
         return -1
     elif maximo >= minimo:
