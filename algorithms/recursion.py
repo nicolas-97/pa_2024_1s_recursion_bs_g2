@@ -35,7 +35,8 @@ def power(a, n):
 def max_in_list(lst):
     # Caso base: si la lista está vacía, no hay máximo
     if not lst:
-        return None
+        return float('-inf')  # Devolver un valor muy pequeño para representar infinito negativo
     # Caso recursivo: el máximo entre el primer elemento y el máximo de la lista restante
     else:
         return max(lst[0], max_in_list(lst[1:]))
+
