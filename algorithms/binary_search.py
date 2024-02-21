@@ -5,7 +5,7 @@ from models.tree_node import TreeNode
 '''
 def binary_search(arr: list, target: int):
     inicio = 0
-    fin = len(lista) - 1
+    fin = len(arr) - 1
 
     while inicio <= fin:
         medio = (inicio + fin) // 2
@@ -23,7 +23,20 @@ def binary_search(arr: list, target: int):
     Implementa una función de búsqueda binaria para encontrar un elemento en una matriz ordenada (fila y columna) de enteros y retorne verdadero si la encuntra el elmento o falso si no lo encuentra
 '''
 def binary_search_matrix(matrix: list[list[int]], target: int):
-    
+    for fila in matrix:
+        inicio = 0
+        fin = len(fila) - 1
+
+        while inicio <= fin:
+            medio = (inicio + fin) // 2
+            valor_apuntado = fila[medio]
+
+            if valor_apuntado == target:
+                return True
+            elif valor_apuntado < target:
+                inicio = medio + 1
+            else:
+                fin = medio - 1
     return False
 
 '''
