@@ -1,9 +1,10 @@
-'''
-    Implementa una función recursiva para calcular el factorial de un número entero positivo
-'''
 
 
 def factorial(n):
+    """"
+        Implementa una función recursiva para calcular el factorial de un número entero positivo
+    """
+
     if n == 0:
         return 1
     else:
@@ -47,13 +48,14 @@ def power(a, n):
     if n == 0:
         return 1
     else:
-        return a * power(a, n -1)
+        return a * power(a, n - 1)
 
 
 '''
     Implementa una función recursiva para encontrar el máximo elemento en una lista de enteros.
     
 '''
+
 
 def max_in_list(lst):
     if len(lst) == 1:
