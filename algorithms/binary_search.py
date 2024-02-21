@@ -1,6 +1,7 @@
 from models.tree_node import TreeNode
 
 def binary_search(arr: list, target: int):
+
     left, right = 0, len(arr) - 1
     
     while left <= right:
@@ -16,7 +17,11 @@ def binary_search(arr: list, target: int):
     
     return -1
 
+    
+
+
 def binary_search_matrix(matrix: list[list[int]], target: int):
+
     if not matrix or not matrix[0]:
         return False
     
@@ -31,10 +36,12 @@ def binary_search_matrix(matrix: list[list[int]], target: int):
             row += 1
         else:
             col -= 1
+
     
     return False
 
 def binary_search_tree(root: TreeNode, target: int):
+
     if not root:
         return False
     
@@ -44,4 +51,8 @@ def binary_search_tree(root: TreeNode, target: int):
         return binary_search_tree(root.right, target)
     else:
         return binary_search_tree(root.left, target)
+
+
+    return False
+    
 
