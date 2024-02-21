@@ -12,10 +12,11 @@ def factorial(n):
     Implementa una función recursiva para calcular el término n-ésimo de la secuencia de Fibonacci.
 '''
 def fibonacci(n):
-    if(n<=1):
+
+    if n <= 1:
         return n
     else:
-        fibonacci(n-1) + fibonacci(n-2)
+        return fibonacci(n - 1) + fibonacci(n - 2)
 
 '''
     Implementa una función recursiva para calcular la suma de los primeros n números enteros.
@@ -41,9 +42,19 @@ def power(a, n):
     Implementa una función recursiva para encontrar el máximo elemento en una lista de enteros.
 '''
 def max_in_list(lst):
-    if len(lst)==1:
+    if not lst:
+        return None
+    
+    if len(lst) == 1:
         return lst[0]
     
+    mitad = len(lst) // 2
+    izquierda = max_in_list(lst[:mitad])
+    derecha = max_in_list(lst[mitad:])
+    
+    if izquierda is None:
+        return derecha
+    elif derecha is None:
+        return izquierda
     else:
-        max_number = max_in_list(lst[1:])
-        return max_number if max_number > lst[0] else lst[0]
+        return max(izquierda, derecha)
